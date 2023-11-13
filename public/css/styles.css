@@ -169,6 +169,8 @@ h4.descripcion{
     display: none;
 }
 
+h4.descripcion
+
 .footer{
     background-color: white;
 }
@@ -222,7 +224,7 @@ h4.descripcion{
     }
 
     .cocuota{
-        font-size: 2vw;
+        font-size: 1.5vw;
         width: 33%;
     }
     
@@ -231,7 +233,7 @@ h4.descripcion{
     }
 
     .lista{
-        font-size: 2vw;
+        font-size: 1.5vw;
         display: flex;
         justify-content: space-around;
         align-items:flex-end;
