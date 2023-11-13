@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.top{
+    width: 100vw;
+}
+
+.logut{
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+div.logo{
+    display: inline-block;
+    width: 50%;
+    margin: 5px;
+}
+
+div.input{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input{
+    border-radius: 10px;
+    border-color: #EAC926;
+    border-width: 0px;
+    display: flex;
+    width: 90%;
+}
+
+.fa-magnifying-glass{   
+    display: flex;
+    background-color: #ffffff;
+    width: 10%;
+    align-self: center;
+    padding: 15px;
+}
+
+.cocuota{
+    font-size: 15px;
+}
+
+.lista{
+    display: none;
+}
+
+.banner{
+    width: 101%;
+    position: relative;
+    top:5px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+
+main{
+    padding: 5px 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+main.titulares h3{
+    font-size: 24px;
+}
+
+
+main.precios p{
+    font-size: 18px;
+}
+
+main.descdes h4{
+    font-size: 16px;
+}
+
+i.fa-bars{
+    
+    font-size: 4vw;
+    padding: 10px 10px 9px 10px;
+    border-radius: 2px;
+
+}
+
+.burger{
+    font-size: 4vw;
+    display:block;
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+.ofertas, .basado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article1, .article2, .article3, .article4{
+    margin-bottom: 10px;
+}
+
+.detalles>.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.detalles {
+    position: relative;
+}
+
+div.detalles{
+    border-width: 1px 0px 0px 0px;
+    border-color: #ebebeb;
+    border-style: solid;
+    background-color: #ffffff;
+    padding-inline: 15px;
+}
+
+div.detalles p{
+    margin: 0px;
+}
+
+.precdesc{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.precdesc p{
+    flex-grow: 0.3;
+}
+
+.precdesc h4{
+    flex-grow: 0.7;
+}
+
+h4.descuento{
+    margin: 0px;
+    color: #39b54a;
+}
+
+h4.descripcion{
+    display: none;
+}
+
+.footer{
+    background-color: white;
+}
+.foots{
+    margin: 0px;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    padding: 5vw;
+}
+
+.foots p{
+    margin: 0px;
+}
+.foots h4{
+    margin: 0px;
+}
+
+ i.icon {
+    margin: 50px 0px 10px 0px;
+    font-size: 2em;
+ }
+
+ .copyr{
+    background-color: white;
+    margin: 0px;
+    padding: 2px;
+ }
+ 
+
+ /* Navegacion TABLET */
+@media (min-width:361px){
+
+    .burger {
+        display: none;
+    }
+
+    h4.descripcion{
+        display: block;
+        padding: 20px 0px;
+        margin: 0px;
+    }
+
+    .logut{
+        width: 66%;
+    }
+
+    .top{
+    display: flex;
+    align-items: center;
+    }
+
+    .cocuota{
+        font-size: 2vw;
+        width: 33%;
+    }
+    
+    div.input{
+        font-size: 2vw;
+    }
+
+    .lista{
+        font-size: 2vw;
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-end;
+    }
+
+    .article1, .article2, .article3, .article4{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45vw;
+    }
+}
+
+/* navegacion DESKTOP */
+@media(min-width: 769px){
+
+    .article1, .article2, .article3, .article4{
+        width: 23vw;
+    }
+}

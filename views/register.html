@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <title>Mi primer documento en HTML</title>
+</head>
+<body>
+    <header >
+        <section class="top">
+            <article class="logut">
+                <div class="logo">
+                    <img src="images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"> 
+                </div>
+                <div class="input">
+                    <input placeholder = " Buscar prodructos, marcas, más..."></imput>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #666";></i>
+                </div>
+            </article>
+            <div class="cocuota" style="text-align: center;">
+                <p><i class="fa-solid fa-hand-holding-dollar" style="color: #000000;"></i>Compra en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        
+
+        <ul type="none" class="lista">
+            <li>Ofertas</li>
+            <li >Tiendas Oficiales</li>
+            <li>Vender</li>
+            <li>Ayuda</li>
+            <br>
+            <BR></BR>
+            <li>Creá tu Cuenta <i class="fa-regular fa-id-card" style="color: #000000;"></i></li>
+            <li>Ingresá <i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></li>
+            <li>Compras <i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></li>
+        </ul>
+        
+        <br>
+
+        <nav class="burger">
+            <i class="fa-solid fa-bars" style="color: #ffffff; background-color: #1259c3;;" ></i>
+        </nav>
+        <div class="banner">
+            <img width ="100%" src="images/img-home-banner.jpg" alt="banner-footer">
+        </div>
+
+    </header>  
+    
+    <main>
+        <section class="top">
+            <p>
+                <strong>
+                    Crear una cuenta
+                </strong>
+            </p>
+        </section>
+
+        <hr>
+
+        <form action="/register" method="post">
+            <br>
+            <p class="nombre">
+                <input placeholder="Nombre y Apellido" type="text" name="nombre" id="nombre" style="color: #00bf63">
+            </p>
+            <br>
+            <p class="usuario">
+                <input placeholder="Nombre de Usuari@" type="text" name="usuario" id="usuario" style="color: #00bf63">
+            </p>
+            <br>
+            <p class="email">
+                <input placeholder="email" type="email" name="email" id="correo" style="color: #00bf63">
+            </p>
+            <br>
+            <p class="fechaNacimiento"></p>
+                <label for="fechaNacimiento">Fecha de Nacimiento </label>
+                <input type="date" name="fechaNacimiento" id="fecha">
+            </p>
+            <p class="perfil">
+                <label for="perfil">Perfil de Usuario</label>
+                <input type="radio" name="perfil" value="Comprador" id="perfil">
+                <input type="radio" name="perfil" value="Vendedor" id="perfil">
+                <br>
+            </p>
+            <br>
+            <p class="intereses">
+                <label for="intereses">Categorias de Interés</label>
+                <input type="checkbox" name="Electro" id="intereses">
+                <input type="checkbox" name="Moda" id="intereses">
+                <input type="checkbox" name="Hogar" id="intereses">
+                <input type="checkbox" name="Jugetería" id="intereses">
+                <input type="checkbox" name="Vida Sana" id="intereses">
+            </p>
+            <br>
+            <p class="clave">
+                <input placeholder="Contraseña" type="password" name="contraseña" id="clave">
+            </p>
+            <br>
+            <p class="clave2">
+                <input placeholder="Confirmar Contraseña" type="password" name="contraseña" id="clave" >
+            </p>
+            <br>
+            <p class="button">
+                <button type="submit"> <i class="fa-solid fa-check" style="color: #00bf63;"></i> Guardar Informacion </button>
+            </p>
+            <br>
+            <p class="button">
+                <button type="reset"> Comenzar de Nuevo </button>
+            </p>
+        </form>
+
+        
+    </main>
+
+    <footer >
+        <section class="foots">
+            <article class="foot">
+                <i class="fa-solid fa-credit-card icon" style="color: #1259c3;"></i>
+                <h4 style="color: #303030;">Pagá con tarjeta o en efectivo</h4>
+                <p style="color: #666;">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-gift icon" style="color: #1259c3;"></i>
+                <h4 style="color: #303030;">Envío gratis desde $ 2.500</h4>
+                <p style="color: #666;">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-user-shield icon" style="color: #1259c3; margin-bottom: 10px;" ></i>
+                <h4 style="color: #303030;">Seguridad, de principio a fin</h4>
+                <p style="color: #666;">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </article>
+        </section>
+        <section class="copyr">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
+    
+</body>
+</html>
