@@ -6,6 +6,7 @@
 
 header{
     background-color: #EAC926;
+    
 }
 
 .top{
@@ -32,11 +33,12 @@ div.input{
     width: 50%;
     justify-content: center;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 5px;
 }
 
 input{
+    font-size: 1vw;
     border-radius: 10px;
     border-color: #EAC926;
     border-width: 0px;
@@ -46,7 +48,6 @@ input{
 
 .fa-magnifying-glass{   
     display: flex;
-    background-color: #ffffff;
     width: 10%;
     align-self: center;
     padding: 15px;
@@ -61,7 +62,7 @@ input{
 }
 
 .banner{
-    width: 101%;
+    width: 100%;
     position: relative;
     top:5px;
 }
@@ -128,6 +129,26 @@ i.fa-bars{
     position: absolute;
     right: 20px;
     top: -15px;
+    
+    animation: truck 2s infinite;
+    
+}
+
+@keyframes truck {
+    25%{
+        transform: rotate(25%)
+    }
+    50%{
+        transform: rotate(50%)
+    }
+    100%{
+        transform: rotate(100%)
+    }
+}
+
+.fa-truck{
+    
+    animation: truck 2s alternate;
 }
 
 .detalles {
@@ -169,7 +190,7 @@ h4.descripcion{
     display: none;
 }
 
-h4.descripcion
+
 
 .footer{
     background-color: white;
@@ -208,12 +229,18 @@ h4.descripcion
         display: none;
     }
 
-    h4.descripcion{
-        display: block;
-        padding: 20px 0px;
-        margin: 0px;
+    .basado, .ofertas{
+        align-items: stretch;
     }
 
+
+
+    h4.descripcion{
+        padding: 20px 0px;
+        margin: 0px;
+        display: none;
+    }
+     
     .logut{
         width: 66%;
     }
@@ -242,7 +269,17 @@ h4.descripcion
     .article1, .article2, .article3, .article4{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45vw;
+        transition: 
+            filter;
     }
+
+    .article1:hover, .article2:hover, .article3:hover, .article4:hover{
+        filter: drop-shadow(0 0 40px black);
+        .descripcion{
+            display: block;
+        }
+    }
+
 }
 
 /* navegacion DESKTOP */
